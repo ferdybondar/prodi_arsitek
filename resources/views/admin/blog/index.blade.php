@@ -3,23 +3,23 @@
         <div class="card">
             <div class="card-body">
                 <a href="/admin/posts/blog/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Tambah </a>
-                <table class="table">
+                <table class="table table-hover">
                     <tr>
-                    <td>no</td>
+                    <td>No</td>
                     <td>Gambar</td>
-                    <td>Title</td>
-                    <td>Kategori</td>
+                    <td>Judul Postingan</td>
+                    <!-- <td>Kategori</td> -->
                     <td>Action</td>
                     </tr>
-                    @foreach ($blog as $item)
+                    @foreach ($blog as $key => $item)
                     <tr>
 
-                        <td>{{$loop->iteration}}</td>
+                        <td>{{$blog->firstItem() + $key}}</td>
                         <td><img src="/{{$item->cover}}" width="100px" alt=""></td>
                         <td>
                             <a href="/admin/posts/blog/{{$item->id}}"><b>{{$item->title}}</b></a>
                         </td>
-                        <td>{{$item->kategori->name}}</td>
+                        <!-- <td>{{$item->kategori->name}}</td> -->
                         <td>
                         <div class="d-flex">
                             <a href="/admin/posts/blog/{{ $item->id }}/edit" class="btn btn-dark mx-2">
@@ -34,6 +34,9 @@
                     </tr>
                     @endforeach
                 </table>
+                <div class="card-body">
+                    {{ $blog->links()}}
+                    </div>
             </div>
         </div>
     </div>

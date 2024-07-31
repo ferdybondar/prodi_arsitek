@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-body bg-dark">
-              
+            <div class="card-body bg-dark"> Selamat Datang
+            {{(auth()->user()->name)}}
             </div>
         </div>
     </div>
@@ -46,13 +46,13 @@
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-list"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Services</span>
+                <span class="info-box-text">Kurikulum</span>
                 <span class="info-box-number">
-                  {{$service}}
-                  <small>Services</small>
+                  {{$kurikulum}}
+                  <small>Kurikulum</small>
                 </span>
               </div>
-              <!-- /.info-box-content -->
+               <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
           </div>

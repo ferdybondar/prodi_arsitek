@@ -5,9 +5,9 @@
             <table class="table">
 
                 <tr>
-                    <td width="100px">#</td>
-                    <td width="250px">Name</td>
-                    <td>Message</td>
+                    <td width="100px">No.</td>
+                    <td width="250px">Nama Pengunjung</td>
+                    <td>Pesan & Saran</td>
                     <td>Action</td>
                 </tr>
                

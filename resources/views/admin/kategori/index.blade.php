@@ -1,12 +1,12 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col md-12">
         <div class="card">
             <div class="card-body">
                 <a href="/admin/posts/kategori/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Tambah </a>
                 <table class="table">
                     <tr>
-                    <td>no</td>
-                    <td>Name</td>
+                    <td>No</td>
+                    <td>Kategori Posting</td>
                     <td>Action</td>
                     </tr>
                     @foreach ($kategori as $item)
@@ -31,4 +31,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

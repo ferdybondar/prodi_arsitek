@@ -43,11 +43,11 @@
 
 <div class="col-md-6">
     <div class="d-flex">
-        <i class="fa fa-phone fa-2x px-3"></i> <h3>000000000000</h3>
+        <i class="fa fa-phone fa-2x px-3"></i> <h3>0821 6482 0814</h3>
     </div>
 
     <div class="d-flex">
-        <i class="fa fa-envelope fa-2x px-3"></i> <h3>Username@gmail.com</h3>
+        <i class="fa fa-envelope fa-2x px-3"></i> <h3>tkkemala@gmail.com</h3>
     </div>
 </div>
 

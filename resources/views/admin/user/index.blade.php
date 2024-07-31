@@ -3,10 +3,11 @@
         <div class="card">
             <div class="card-body">
                 <a href="/admin/user/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Tambah </a>
-                <table class="table">
+                <table class="table table-bordered table-hover">
                     <tr>
-                    <td>no</td>
-                    <td>Name</td>
+                    <td>No</td>
+                    <td>Nama</td>
+                    <td>Level</td>
                     <td>Email</td>
                     <td>Action</td>
                     </tr>
@@ -15,6 +16,7 @@
 
                         <td>{{$loop->iteration}}</td>
                         <td>{{$item->name}}</td>
+                        <td>{{$item->level}}</td>
                         <td>{{$item->email}}</td>
                         <td>
                         <div class="d-flex">

@@ -9,5 +9,6 @@
         <div class="card py-3">
         <p>{!! $blog->body !!}</p>
         </div>
+
     </div>
 </div>

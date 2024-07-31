@@ -11,9 +11,9 @@
                     @endif
                     @csrf
                 <div class="form-group">
-                    <label for="">Kode</label>
+                    <label for="">Urutan Waktu</label>
                     <input type="text" name="title" class="form-control @error('title') is-invalid @enderror"
-                    placeholder="Kode" value="{{isset ($kurikulum) ? $kurikulum->title : old ('title')}}">
+                    placeholder="Urutan Waktu" value="{{isset ($kurikulum) ? $kurikulum->title : old ('title')}}">
                      @error('title')
                      <div class="invalid-feedback">
                         {{$message}}
@@ -22,9 +22,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Nama</label>
+                    <label for="">Tema</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
-                    placeholder="Nama" value="{{isset ($kurikulum) ? $kurikulum->name : old ('name')}}">
+                    placeholder="Tema" value="{{isset ($kurikulum) ? $kurikulum->name : old ('name')}}">
                      @error('name')
                      <div class="invalid-feedback">
                         {{$message}}
@@ -33,9 +33,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Semester</label>
+                    <label for="">Alokasi Waktu</label>
                     <input type="text" name="desc" class="form-control @error('desc') is-invalid @enderror"
-                    placeholder="Semester" value="{{isset ($kurikulum) ? $kurikulum->desc : old ('desc')}}">
+                    placeholder="Alokasi Waktu" value="{{isset ($kurikulum) ? $kurikulum->desc : old ('desc')}}">
                      @error('desc')
                      <div class="invalid-feedback">
                         {{$message}}
@@ -44,9 +44,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">SKS</label>
+                    <label for="">Total Waktu</label>
                     <input type="text" name="body" class="form-control @error('body') is-invalid @enderror"
-                    placeholder="SKS" value="{{isset ($kurikulum) ? $kurikulum->body : old ('body')}}">
+                    placeholder="Total Waktu" value="{{isset ($kurikulum) ? $kurikulum->body : old ('body')}}">
                      @error('body')
                      <div class="invalid-feedback">
                         {{$message}}

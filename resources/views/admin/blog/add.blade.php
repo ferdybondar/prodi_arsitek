@@ -14,8 +14,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">Title</label>
-                                    <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" placeholder="Title" value="{{isset ($blog) ? $blog->title : old ('title')}}">
+                                    <label for="">Judul Postingan</label>
+                                    <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" 
+                                    placeholder="Judul" value="{{isset ($blog) ? $blog->title : old ('title')}}">
                                     @error('title')
                                     <div class="invalid-feedback">
                                         {{$message}}
@@ -23,7 +24,7 @@
                                     @enderror
                                 </div>
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="">Kategori</label>
                                     <select name="kategori_id" class="form-control" id="">
                                         <option value="">--KATEGORI--</option>
@@ -42,10 +43,10 @@
                                         {{$message}}
                                     </div>
                                     @enderror
-                                </div>
+                                </div> -->
 
                                 <div class="form-group">
-                                    <label for="">Cover</label>
+                                    <label for="">Gambar Postingan</label>
                                     <input type="file" name="cover" class="form-control @error('cover') 
                     is-invalid @enderror" placeholder="********">
                                     @error('cover')
@@ -62,7 +63,7 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">Body</label>
+                                    <label for="">Deskripsi Postingan</label>
                                     <textarea type="text" id="summernote" name="body" class="form-control @error('body') is-invalid @enderror" placeholder="Body">{{isset($blog) ? $blog->body : old ('body')}}
                                     </textarea>
                                     @error('body')

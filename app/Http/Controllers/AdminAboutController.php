@@ -15,7 +15,7 @@ class AdminAboutController extends Controller
     {
         //
         $data = [
-            'title' => 'Manajemen About',
+            'title' => 'Manajemen Visi & Misi',
             'about'  => About::first(),
             'content' => 'admin/about/index'
         ];

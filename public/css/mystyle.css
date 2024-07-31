@@ -31,13 +31,13 @@
        }
 
       .bg-img-1{
-         background-image: url('/img/arsitek2.jpg');
+         background-image: url('/img/gambar3.jpg');
       }
       .bg-img-2{
-         background-image: url('/img/arsitek1.jpg');
+         background-image: url('/img/guru.jpg');
       }
       .bg-img-3{
-         background-image: url('/img/arsitek3.jpg');
+         background-image: url('/img/murid.jpg');
       }
       .carousel-image{
          height: 100vh;

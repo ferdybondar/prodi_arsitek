@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
@@ -13,7 +13,7 @@
                 <div class="form-group">
                     <label for="">Nama Kategori</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
-                    placeholder="Nama Kategori" value="{{isset ($kategori) ? $kategori->name : old ('name')}}">
+                    placeholder="Kategori" value="{{isset ($kategori) ? $kategori->name : old ('name')}}">
                      @error('name')
                      <div class="invalid-feedback">
                         {{$message}}
@@ -30,4 +30,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

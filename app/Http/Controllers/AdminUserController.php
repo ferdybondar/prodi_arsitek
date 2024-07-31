@@ -47,6 +47,7 @@ class AdminUserController extends Controller
         // dd($request->all());//
         $data = $request->validate([
             'name' => 'required',
+            'level' => 'required',
             'email' => 'required|unique:users',
             'password' => 'required|min:3',
             're_password' => 'required|same:password',
@@ -55,7 +56,7 @@ class AdminUserController extends Controller
 
         $data['password'] = Hash::make($data['password']);
 
-            user::create($data);
+            User::create($data);
             Alert::success('Sukses', 'Data Berhasil Ditambahkan',);
             return redirect('/admin/user');
 
@@ -92,8 +93,9 @@ class AdminUserController extends Controller
         $user = User::find($id);
         $data = $request->validate([
             'name' => 'required',
+            'level' => 'required',
             'email' => 'required|unique:users,email,'. $user->id,
-            //'password' => 'min:8',
+            'password' => 'min:3',
             're_password' => 'same:password',
 
         ]);

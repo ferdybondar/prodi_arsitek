@@ -12,7 +12,7 @@
                         <div class="row">
                             <div class="col-md-6">
                             <div class="form-group">
-                    <label for="">Nama Fakultas</label>
+                    <label for="">Visi & Misi</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
                     placeholder="Nama Fakultas" value="{{isset ($about) ? $about->name : old ('name')}}">
                      @error('name')
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Cover</label>
+                    <label for="">Gambar</label>
                     <input type="file" name="cover" class="form-control @error('cover') 
                     is-invalid @enderror" placeholder="********">
                     @error('cover')
@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-6">
             <div class="form-group">
-                    <label for="">Deskripsi</label>
+                    <label for="">Deskripsi Visi & Misi</label>
                     <textarea name="desc" id="summernote" class="form-control @error('desc') 
                     is-invalid @enderror" id="" cols="30" rows="10">{{$about->desc}}</textarea>
                         @error('desc')

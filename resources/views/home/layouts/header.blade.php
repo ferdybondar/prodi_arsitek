@@ -30,7 +30,7 @@
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top  ">
   <div class="container">
-      <a class="navbar-brand"> <img src="/img/arsitek4.jpg" alt="">TEKNIK ARSITEK UNPAB</a>
+      <a class="navbar-brand"> <img src="/img/logoyayasan.png" alt="">TK. Kemala Bhayangkari 5 Binjai </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,29 +43,29 @@
           <li class="nav-item">
             <a class="nav-link {{ Request::is('about') ? 'menu-active' : ''}}" href="/about" >Visi & Misi</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link {{ Request::is('services') ? 'menu-active' : ''}}" href="/services">Tentang</a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <a class="nav-link {{ Request::is('kurikulum') ? 'menu-active' : ''}}" href="/kurikulum">Kurikulum</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('dosen') ? 'menu-active' : ''}}" href="/dosen">Dosen</a>
+            <a class="nav-link {{ Request::is('dosen') ? 'menu-active' : ''}}" href="/dosen">Guru</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ Request::is('blog*') ? 'menu-active' : ''}}" href="/blog">Postingan</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link {{ Request::is('contact') ? 'menu-active' : ''}}" href="/contact">Saran</a>
-          </li>
+          </li> -->
         </ul>
         <form class="d-flex">
           @auth
             <a href="/admin/dashboard" class="btn btn-success "><i class="fas fa-user px-2"></i>Dashboard</a>
             @else
-            <a href="/login" class="btn btn-success "><i class="fas fa-sign-in-alt px-2"></i>Sign</a>
+            <a href="/login" class="btn btn-success "><i class="fas fa-sign-in-alt px-2"></i>Login</a>
           @endauth
         </form>
       </div>

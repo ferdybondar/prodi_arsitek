@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body">
                 <a href="/admin/dosen/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Tambah </a>
-                <table class="table table-bordered">
+                <table class="table table-bordered table-hover">
                     <tr>
                     <th>No</th>
                     <th>Nama</th>

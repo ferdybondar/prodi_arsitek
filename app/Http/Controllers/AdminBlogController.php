@@ -18,8 +18,8 @@ class AdminBlogController extends Controller
     {
         //
         $data = [
-            'title' => 'Manajemen Blog',
-            'blog'  => Blog::with('kategori')->get(),
+            'title' => 'Manajemen Postingan',
+            'blog'  => Blog::with('kategori')->paginate(3),
             'content' => 'admin/blog/index'
         ];
         return view('admin.layouts.wrapper', $data );

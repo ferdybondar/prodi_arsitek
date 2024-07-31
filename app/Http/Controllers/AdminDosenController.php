@@ -11,7 +11,7 @@ class AdminDosenController extends Controller
   public function index()
     {
       $data = [
-        'title' => 'Manajemen Dosen',
+        'title' => 'Manajemen Guru',
         'dosen'  => Dosen::get(),
         'content' => 'admin/dosen/index'
     ];
@@ -25,7 +25,7 @@ public function create()
 {
     //
     $data = [
-        'title' => 'Tambah Dosen',
+        'title' => 'Tambah Guru',
        
         'content' => 'admin/dosen/add'
     ];
@@ -69,7 +69,7 @@ public function edit(string $id)
 {
     //
     $data = [
-        'title' => 'Edit Dosen',
+        'title' => 'Edit Guru',
         'dosen'=> Dosen::find($id),
         'content' => 'admin/dosen/add'
     ];

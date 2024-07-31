@@ -105,4 +105,4 @@ public function destroy(string $id)
     Alert::success('Sukses', 'Data Berhasil Dihapus',);
     return redirect('/admin/service');
 }
-}
+} 

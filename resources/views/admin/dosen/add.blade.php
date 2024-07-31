@@ -11,9 +11,9 @@
                     @endif
                     @csrf
                 <div class="form-group">
-                    <label for="">Nama Dosen</label>
+                    <label for="">Nama Guru</label>
                     <input type="text" name="title" class="form-control @error('title') is-invalid @enderror"
-                    placeholder="Nama" value="{{isset ($dosen) ? $dosen->title : old ('title')}}">
+                    placeholder="Guru" value="{{isset ($dosen) ? $dosen->title : old ('title')}}">
                      @error('title')
                      <div class="invalid-feedback">
                         {{$message}}
@@ -22,9 +22,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Deskripsi</label>
+                    <label for="">Asal Institusi</label>
                     <input type="text" name="desc" class="form-control @error('desc') is-invalid @enderror"
-                    placeholder="Asal Institusi" value="{{isset ($dosen) ? $dosen->desc : old ('desc')}}">
+                    placeholder="Institusi" value="{{isset ($dosen) ? $dosen->desc : old ('desc')}}">
                      @error('desc')
                      <div class="invalid-feedback">
                         {{$message}}

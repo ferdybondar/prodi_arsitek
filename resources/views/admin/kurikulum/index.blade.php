@@ -3,15 +3,14 @@
         <div class="card">
             <div class="card-body">
                 <a href="/admin/kurikulum/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Tambah </a>
-                <table class="table table-bordered">
+                <table class="table table-bordered table-hover">
                     <tr>
                     <th>No</th>
-                    <th>Kode</th>
-                    <th>Nama</th>
-                    <th>Semester</th>
-                    <th>SKS</th>
-                    <th>Action</th>
-                    
+                    <th>Urutan Waktu</th>
+                    <th>Tema</th>
+                    <th>Alokasi Waktu</th>
+                    <th>Total Waktu</th>
+                    <th>Action</th>               
                     </tr>
                     @foreach ($kurikulum as $item)
                     <tr>

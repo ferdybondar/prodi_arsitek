@@ -1,18 +1,18 @@
 <div class="container">
 
-<div class="text-center mt-5">
-        <h4 class="">Kurikulum Teknik Arsitek</h4>
+<div class="text-center">
+        <h4 class="">Kurikulum TK. Kemala Bhayangkari 5 Binjai</h4>
     </div>
 
-    <div class="row mt-5">
+    <div class="row ">
       <div class="card-body">
-        <table class="table table-bordered">
+      <table class="table table-bordered">
         <tr>
                     <th>No</th>
-                    <th>Kode</th>
+                    <th>Urutan</th>
                     <th>Nama</th>
-                    <th>Semester</th>
-                    <th>SKS</th>
+                    <th>Alokasi Waktu</th>
+                    <th>Jumlah</th>
         </tr>
 
         @foreach ($kurikulum as $item)

@@ -11,7 +11,7 @@
                     @endif
                     @csrf
                 <div class="form-group">
-                    <label for="">Username</label>
+                    <label for="">Nama User</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
                     placeholder="Username" value="{{isset ($user) ? $user->name : old ('name')}}">
                      @error('name')
@@ -19,6 +19,27 @@
                         {{$message}}
                      </div>
                      @enderror
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="">Level</label>
+                    <input type="text" name="level" class="form-control @error('level') is-invalid @enderror"
+                    placeholder="level" value="{{isset ($user) ? $user->level : old ('level')}}">
+                     @error('level')
+                     <div class="invalid-feedback">
+                        {{$message}}
+                     </div>
+                     @enderror
+                </div> -->
+
+                <div class="form-group">
+                <label for="">level</label>
+                <div col-md-6>
+                <select name="level" class="form-control">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                </div>
                 </div>
 
                 <div class="form-group">

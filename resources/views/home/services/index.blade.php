@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
 
 <div class="text-center mt-5">
         <h4 class="">Tentang Kami</h4>
@@ -19,4 +19,4 @@
       @endforeach
 
     </div>
-</div>
+</div> -->

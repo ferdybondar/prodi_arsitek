@@ -15,9 +15,10 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'name' => 'Super Admin',
-            'email' => 'superadmin@email.com',
-            'password' => bcrypt('superadmin123'),
+            'name' => 'Ferdy Bondar',
+            'level' => 'Admin',
+            'email' => 'ferdybondar@gmail.com',
+            'password' => bcrypt('ferdy123'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
